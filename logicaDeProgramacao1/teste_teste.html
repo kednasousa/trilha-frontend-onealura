@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calcularRespostas(pergunta1,pergunta2) {
+    var acertos = 0;
+
+    if(respostaCerta1 === pergunta1){
+        mostra("Voce acertou!");
+    acertos++;
+} else{
+        mostra("Voce errou");
+
+}
+
+        if(respostaCerta2===pergunta2){
+            mostra("voce acertou!");
+            acertos++;
+    } else{
+            mostra("Voce errou");
+        }
+
+    mostra("voce fez " + acertos + " acertos de 2 ");
+}
+
+    var pergunta1= prompt("verdadeiro ou falso: A raiz quadrade de 9 é 1?");
+    var pergunta2= prompt("verdadeiro ou falso: O brasil possui 26 estados?");
+
+    var respostaCerta1= "falso";
+    var respostaCerta2= "verdadeiro";
+
+
+
+    calcularRespostas(pergunta1,pergunta2);
+
+</script>

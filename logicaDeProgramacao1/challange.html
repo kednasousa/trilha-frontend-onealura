@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decodificador de Texto</title>
+    <script>
+        function decodificarTexto() {
+            var textoCodificado = document.getElementById("textoCodificado").value;
+            var textoDecodificado = atob(textoCodificado);
+            document.getElementById("textoDecodificado").value = textoDecodificado;
+        }
+    </script>
+</head>
+<body>
+    <h1>Decodificador de Texto</h1>
+    <label for="textoCodificado">Texto Codificado:</label>
+    <input type="text" id="textoCodificado" placeholder="Insira o texto codificado aqui">
+    <br>
+    <button onclick="decodificarTexto()">Decodificar</button>
+    <br>
+    <label for="textoDecodificado">Texto Decodificado:</label>
+    <input type="text" id="textoDecodificado" readonly>
+</body>
+</html>

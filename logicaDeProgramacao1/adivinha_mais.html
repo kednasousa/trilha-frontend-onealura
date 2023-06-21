@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<input>
+<button>Compare com o meu segredo</button>
+
+
+
+
+<script>
+
+    var segredo = Math.round(Math.random() * 10); //gera a variável segredo
+    var input = document.querySelector("input"); //pega o input do html
+    input.focus(); //deixa a caixinha em foco
+
+    function verifica(){
+        if(input.value == segredo){
+            alert("Você ACERTOU!");
+        } else {
+            alert("Você ERROU!");
+        }
+
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button"); //pega botão do mundo html
+    button.onclick = verifica;
+
+
+</script>
